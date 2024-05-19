@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0w7rbu2066s3"
-path="res://.godot/imported/Idle-Sheet.png-3e38ad40c270f60e5c0c329b76158006.ctex"
+uid="uid://bykuor5bve212"
+path="res://.godot/imported/Rustic.png-94c95b22c22fbd9cd0331fe52e2f8f38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Enemies/Skeleton - Base/Idle/Idle-Sheet.png"
-dest_files=["res://.godot/imported/Idle-Sheet.png-3e38ad40c270f60e5c0c329b76158006.ctex"]
+source_file="res://textures/Weapons/Rustic.png"
+dest_files=["res://.godot/imported/Rustic.png-94c95b22c22fbd9cd0331fe52e2f8f38.ctex"]
 
 [params]
 

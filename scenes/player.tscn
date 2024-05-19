@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://r10hsbcin65i"]
+[gd_scene load_steps=18 format=3 uid="uid://r10hsbcin65i"]
 
-[ext_resource type="Texture2D" uid="uid://g0bb6uwxn5qh" path="res://art/Heroes/Rogue/Idle/Idle-Sheet.png" id="1_4datl"]
+[ext_resource type="Texture2D" uid="uid://g0bb6uwxn5qh" path="res://textures/Heroes/Rogue/Idle/Idle-Sheet.png" id="1_4datl"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_bjq6a"]
-[ext_resource type="Texture2D" uid="uid://bhadqxupbrn6a" path="res://art/Heroes/Rogue/Run/Run-Sheet.png" id="3_iyav5"]
+[ext_resource type="Texture2D" uid="uid://bhadqxupbrn6a" path="res://textures/Heroes/Rogue/Run/Run-Sheet.png" id="3_iyav5"]
+[ext_resource type="PackedScene" uid="uid://bf0qedfvioh70" path="res://scenes/utilities/hurt_box.tscn" id="4_cq4os"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nd1hg"]
 atlas = ExtResource("1_4datl")
@@ -87,9 +88,13 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2gsme"]
-radius = 9.0
-height = 26.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onlxv"]
+radius = 6.0
+height = 24.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n6ryv"]
+radius = 8.0
+height = 28.0
 
 [node name="player" type="CharacterBody2D" groups=["player_group"]]
 motion_mode = 1
@@ -106,5 +111,17 @@ frame_progress = 0.207389
 zoom = Vector2(2.5, 2.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
-shape = SubResource("CapsuleShape2D_2gsme")
+position = Vector2(1, 3)
+shape = SubResource("CapsuleShape2D_onlxv")
+
+[node name="HurtBox" parent="." instance=ExtResource("4_cq4os")]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2(1, 2)
+shape = SubResource("CapsuleShape2D_n6ryv")
+
+[connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]
+
+[editable path="HurtBox"]

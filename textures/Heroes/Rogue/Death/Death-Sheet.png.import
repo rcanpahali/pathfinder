@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv3j0qru7yf6d"
-path="res://.godot/imported/Run-Sheet.png-396c433ed34688417633d125d6c12fda.ctex"
+uid="uid://smfyn6p11w48"
+path="res://.godot/imported/Death-Sheet.png-c9f3f5744869526fa614d517eb68fd28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Enemies/Skeleton - Base/Run/Run-Sheet.png"
-dest_files=["res://.godot/imported/Run-Sheet.png-396c433ed34688417633d125d6c12fda.ctex"]
+source_file="res://textures/Heroes/Rogue/Death/Death-Sheet.png"
+dest_files=["res://.godot/imported/Death-Sheet.png-c9f3f5744869526fa614d517eb68fd28.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bykuor5bve212"
-path="res://.godot/imported/Rustic.png-129a6c90b30f3f133f31134c49ddd1c8.ctex"
+uid="uid://g0bb6uwxn5qh"
+path="res://.godot/imported/Idle-Sheet.png-72e45ad154233d98cc0fa2983bd06454.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Weapons/Rustic.png"
-dest_files=["res://.godot/imported/Rustic.png-129a6c90b30f3f133f31134c49ddd1c8.ctex"]
+source_file="res://textures/Heroes/Rogue/Idle/Idle-Sheet.png"
+dest_files=["res://.godot/imported/Idle-Sheet.png-72e45ad154233d98cc0fa2983bd06454.ctex"]
 
 [params]
 

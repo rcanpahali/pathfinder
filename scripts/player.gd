@@ -1,12 +1,10 @@
 extends CharacterBody2D
 
-#@onready var animation_tree: AnimationTree = $AnimationTree
-#@onready var state_machine: AnimationNodeStateMachinePlayback = animation_tree.get("parameters/playback")
-#@export var starting_direction: Vector2 = Vector2(0,1)
-
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 @export var SPEED: float = 200.0
+
+var hp: int = 80
 
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("esc"):
@@ -48,3 +46,8 @@ func updateAnimation(input_direction: Vector2) -> void:
 		#state_machine.travel("Walk") #Switch between state machine  definitions
 	#else:
 		#state_machine.travel("Idle")
+
+
+func _on_hurt_box_hurt(damage):
+	hp -= damage
+	print(hp)

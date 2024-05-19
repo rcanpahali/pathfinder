@@ -5,6 +5,8 @@ extends CharacterBody2D
 
 @export var base_movement_speed: float = 30.0
 @export var movement_speed_variation: float = 10.0
+@export var hp: int = 10
+
 var movement_speed: float
 
 func _ready() -> void:
@@ -25,3 +27,11 @@ func update_animation(direction: Vector2) -> void:
 		animated_sprite_2d.flip_h = true
 	elif direction.x > 0:
 		animated_sprite_2d.flip_h = false
+
+
+
+func _on_hurt_box_hurt(damage):
+	hp -= damage
+	print(hp)
+	if hp <= 0:
+		queue_free()

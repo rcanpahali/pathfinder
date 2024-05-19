@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://di0hj57xivh3u"]
 
-[ext_resource type="Texture2D" uid="uid://bwfpk7vs4ad0" path="res://art/Assets/Tiles.png" id="1_7rjhn"]
+[ext_resource type="Texture2D" uid="uid://bwfpk7vs4ad0" path="res://textures/Assets/Tiles.png" id="1_7rjhn"]
 [ext_resource type="PackedScene" uid="uid://r10hsbcin65i" path="res://scenes/player.tscn" id="2_61nek"]
 [ext_resource type="PackedScene" uid="uid://dx5cl6ayj2ci" path="res://scenes/enemy.tscn" id="3_rwnvl"]
 

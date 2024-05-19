@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1y358mljw2uh"
-path="res://.godot/imported/MockUp_01.png-f06244eb3556c5f638d94927c4721bd9.ctex"
+uid="uid://bfdeoauyd1xpf"
+path="res://.godot/imported/Death-Sheet.png-467da45dbdc8c4693d1f67c37b168cc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Social/MockUp_01.png"
-dest_files=["res://.godot/imported/MockUp_01.png-f06244eb3556c5f638d94927c4721bd9.ctex"]
+source_file="res://textures/Enemies/Skeleton - Base/Death/Death-Sheet.png"
+dest_files=["res://.godot/imported/Death-Sheet.png-467da45dbdc8c4693d1f67c37b168cc4.ctex"]
 
 [params]
 

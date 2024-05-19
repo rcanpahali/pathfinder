@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://smfyn6p11w48"
-path="res://.godot/imported/Death-Sheet.png-4c07dbc989ef54705c8aad2e02d916f2.ctex"
+uid="uid://bwfpk7vs4ad0"
+path="res://.godot/imported/Tiles.png-af90f1f18032308401081da298e5cc21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Heroes/Rogue/Death/Death-Sheet.png"
-dest_files=["res://.godot/imported/Death-Sheet.png-4c07dbc989ef54705c8aad2e02d916f2.ctex"]
+source_file="res://textures/Assets/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-af90f1f18032308401081da298e5cc21.ctex"]
 
 [params]
 
