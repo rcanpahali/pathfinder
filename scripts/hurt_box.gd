@@ -5,25 +5,23 @@ extends Area2D
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var timer = $Timer
 
-signal hurt(damage)
+# create custom signal to trigger when the area is "attack_group"
+signal hurt(damage: int);
 
-# todos
-# check how this _on_area_entered works
-# re-work collision shapes
-
-func _on_area_entered(area):
+func _on_area_entered(area: Area2D):
 	if area.is_in_group("attack_group"):
-		if area.get("damage") != null:
+		var enemy: Area2D = area;
+		if enemy.get("damage") != null:
 			match BoxType: 
 				0: # Cooldown
-					collision_shape_2d.set_deferred("disabled", true) # check this set_deferred or call_deferred
-					timer.start()
+					collision_shape_2d.set_deferred("disabled", true);
+					timer.start();
 				1: # HitOnce
 					pass
 				2: # Disabled
-					if area.has_method("temporary_disable"):
-						area.temporary_disable()
-			var damage = area.damage
+					if enemy.has_method("temporary_disable"):
+						enemy.temporary_disable()
+			var damage = enemy.damage
 			emit_signal("hurt", damage)
 
 func _on_timer_timeout():

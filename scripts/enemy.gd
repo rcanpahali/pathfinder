@@ -23,15 +23,15 @@ func move_to_player_position() -> void:
 	update_animation(direction)
 
 func update_animation(direction: Vector2) -> void:
-	if direction.x < 0:
+	if player.velocity == Vector2.ZERO: # no need to update animation direction if player is not moving
+		return;
+	elif direction.x < 0:
 		animated_sprite_2d.flip_h = true
 	elif direction.x > 0:
 		animated_sprite_2d.flip_h = false
 
-
-
 func _on_hurt_box_hurt(damage):
 	hp -= damage
-	print(hp)
+	print("Enemy HP:", hp)
 	if hp <= 0:
 		queue_free()

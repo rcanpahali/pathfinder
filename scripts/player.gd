@@ -19,11 +19,11 @@ func handle_movement() -> void:
 		
 		velocity = input_direction.normalized() * SPEED
 		move_and_slide()
-		updateAnimation(input_direction)
+		update_animation(input_direction)
 
-func updateAnimation(input_direction: Vector2) -> void:
+func update_animation(input_direction: Vector2) -> void:
 	#switch between states: running <--> idle
-	if(velocity == Vector2.ZERO):
+	if velocity == Vector2.ZERO:
 		animated_sprite_2d.animation = "idle";
 	else:
 		animated_sprite_2d.animation = "walk";
@@ -33,21 +33,7 @@ func updateAnimation(input_direction: Vector2) -> void:
 		animated_sprite_2d.flip_h = true;
 	elif(input_direction.x > 0):
 		animated_sprite_2d.flip_h = false;
-	else: 
-		return;
-	
-#func update_animation_position_parameters(move_input: Vector2) -> void:
-	#if move_input != Vector2.ZERO:
-		#animation_tree.set("parameters/Walk/blend_position", move_input)
-		#animation_tree.set("parameters/Idle/blend_position", move_input)
 
-#func update_animation_state_machine(move_input: Vector2) -> void:
-	#if move_input != Vector2.ZERO:
-		#state_machine.travel("Walk") #Switch between state machine  definitions
-	#else:
-		#state_machine.travel("Idle")
-
-
-func _on_hurt_box_hurt(damage):
+func _on_hurt_box_hurt(damage: int):
 	hp -= damage
-	print(hp)
+	print("Player HP:", hp)

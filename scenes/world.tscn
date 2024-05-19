@@ -714,34 +714,8 @@ layer_8/name = "ground_object_decoration"
 layer_8/tile_data = PackedInt32Array(655362, 1245184, 14, 720897, 1179648, 14, 655361, 1376256, 14, 393218, 1572864, 5, 458754, 1572864, 6, 524290, 1572864, 7, 1310719, 65536, 19, 1310720, 131072, 21, 1245195, 65536, 20, 1179659, 65536, 20, 1245194, 0, 19)
 
 [node name="player" parent="." instance=ExtResource("2_61nek")]
-position = Vector2(-149, 220)
+position = Vector2(-125, 154)
 
 [node name="enemy_kolbol_weak" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-142, 57)
-
-[node name="enemy_kolbol_weak2" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-362, -9)
-
-[node name="enemy_kolbol_weak3" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-263, -41)
-
-[node name="enemy_kolbol_weak4" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-390, 97)
-
-[node name="enemy_kolbol_weak5" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-372, 63)
-
-[node name="enemy_kolbol_weak6" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-220, 65)
-
-[node name="enemy_kolbol_weak7" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-142, 104)
-
-[node name="enemy_kolbol_weak8" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-266, 39)
-
-[node name="enemy_kolbol_weak9" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-91, 133)
-
-[node name="enemy_kolbol_weak10" parent="." instance=ExtResource("3_rwnvl")]
-position = Vector2(-337, 178)
+position = Vector2(-349, 61)
+hp = 10
