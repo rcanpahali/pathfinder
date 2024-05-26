@@ -88,8 +88,8 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwl1e"]
-size = Vector2(13.25, 13)
+[sub_resource type="CircleShape2D" id="CircleShape2D_j8be4"]
+radius = 7.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n6ryv"]
 radius = 8.0
@@ -104,14 +104,13 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_5uhds")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.207389
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 5)
-shape = SubResource("RectangleShape2D_bwl1e")
+shape = SubResource("CircleShape2D_j8be4")
 
 [node name="HurtBox" parent="." instance=ExtResource("4_cq4os")]
 position = Vector2(0, 1)
@@ -120,7 +119,7 @@ collision_mask = 2
 BoxType = 2
 
 [node name="CollisionShape2D" parent="HurtBox" index="0"]
-position = Vector2(1, 1)
+position = Vector2(1, 0)
 shape = SubResource("CapsuleShape2D_n6ryv")
 
 [connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]

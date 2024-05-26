@@ -18,7 +18,7 @@ func handle_movement() -> void:
 		Input.get_action_strength("down") - Input.get_action_strength("up"))
 		
 		velocity = input_direction.normalized() * SPEED
-		move_and_slide()
+		move_and_slide()		
 		update_animation(input_direction)
 
 func update_animation(input_direction: Vector2) -> void:
@@ -36,4 +36,4 @@ func update_animation(input_direction: Vector2) -> void:
 
 func _on_hurt_box_hurt(damage: int):
 	hp -= damage
-	print("Player HP:", hp)
+	#print("Player HP:", hp)

@@ -26,5 +26,3 @@ func _on_area_entered(area: Area2D):
 
 func _on_timer_timeout():
 	collision_shape_2d.set_deferred("disabled", false)
-
-
